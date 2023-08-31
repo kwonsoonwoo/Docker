@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./index.html:/usr/share/nginx/html
+    ports:
+      - "50000:80"
+    restart: always
